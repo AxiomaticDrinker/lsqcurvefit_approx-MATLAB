@@ -15,7 +15,7 @@ Fits linear and polynomial models to data using linear least squares and approxi
 
 ## Description
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y)` returns the model coefficient vector `c = [m,b]` for the linear fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=mx+b"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y)` returns the model coefficient vector `c = [m,b]` for the linear fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;\bg{red}y=mx+b"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
 `[c,r2,eqn] = lsqcurvefit_approx(x,y,'linear')` does the exact same thing as the syntax above.
 

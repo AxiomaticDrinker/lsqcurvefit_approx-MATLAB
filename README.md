@@ -12,20 +12,19 @@ Fits linear and polynomial models to data using linear least squares and approxi
 `[c,r2,eqn] = lsqcurvefit_approx(x,y,'exp')`\
 `[c,r2,eqn] = lsqcurvefit_approx(x,y,'log')`
 
-
 ## Description
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y)` returns the model coefficient vector `c = [m,b]` for the linear fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=mx+b"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y)` returns the model coefficient vector `c = [m,b]` for the linear fit <img src="https://render.githubusercontent.com/render/math?math={\color{white}y = mx %2B b}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={y = mx %2B b}#gh-light-mode-only"> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
 `[c,r2,eqn] = lsqcurvefit_approx(x,y,'linear')` does the exact same thing as the syntax above.
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y,'poly',n)` returns the model coefficient vector `c = [a0,...,an]` for the <img src="https://latex.codecogs.com/svg.latex?\inline&space;n^{\textrm{th}}"/> degree polynomial fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=a_0&space;+a_1&space;x+a_2&space;x^2&space;+\dots&space;+a_n&space;x^n"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y,'poly',n)` returns the model coefficient vector `c = [a0,...,an]` for the <img src="https://render.githubusercontent.com/render/math?math={\color{white}n^{\textrm{th}}}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={n^{\textrm{th}}}#gh-light-mode-only"> degree polynomial fit <img src="https://render.githubusercontent.com/render/math?math={\color{white}y=a_0 %2B a_1x %2B a_2x^2 %2B \dots %2B a_nx^n}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={y=a_0 %2B a_1x %2B a_2x^2 %2B \dots %2B a_nx^n}#gh-light-mode-only"> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y,'power')` returns the model coefficient vector `c = [a,b]` for the power fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=ax^b"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y,'power')` returns the model coefficient vector `c = [a,b]` for the power fit <img src="https://render.githubusercontent.com/render/math?math={\color{white}y=ax^b}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={y=ax^b}#gh-light-mode-only"> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y,'exp')` returns the model coefficient vector `c = [a,b]` for the exponential fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=ae^{bx}"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y,'exp')` returns the model coefficient vector `c = [a,b]` for the exponential fit <img src="https://render.githubusercontent.com/render/math?math={\color{white}y=ae^{bx}}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={y=ae^{bx}}#gh-light-mode-only"> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
-`[c,r2,eqn] = lsqcurvefit_approx(x,y,'log')` returns the model coefficient vector `c = [a,b]` for the logarithmic fit <img src="https://latex.codecogs.com/svg.latex?\inline&space;y=a+b\ln&space;x"/> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
+`[c,r2,eqn] = lsqcurvefit_approx(x,y,'log')` returns the model coefficient vector `c = [a,b]` for the logarithmic fit <img src="https://render.githubusercontent.com/render/math?math={\color{white}y=a %2B b\ln x}#gh-dark-mode-only"><img src="https://render.githubusercontent.com/render/math?math={a %2B b\ln x}#gh-light-mode-only"> to a data set defined by the vectors `x` (independent variable) and `y` (dependent variable).
 
 **NOTE:** Additionally, for all the syntaxes, the coefficient of determination (`r2`) and a string (`eqn`) storing the fitted equation (for use in figure text with LaTeX interpreter) are also returned.
 
